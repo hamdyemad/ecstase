@@ -1,0 +1,48 @@
+<div class="all-navs">
+  <div class="upper-nav">
+    <div class="news-tape" *ngFor="let upperNav of upperNav(8)">
+      <h5>{{ "navbar.upperNavH" | translate }} <span>{{ "navbar.upperNavSpan" | translate }}</span></h5>
+    </div>
+  </div>
+  <nav>
+    <div class="burger" #burger (click)="toggleNavbar(burger, links)">
+      <div class="burger-top"></div>
+      <div class="burger-middle"></div>
+      <div class="burger-bottom"></div>
+    </div>
+    <div class="logo">
+      <img src="../../../assets/images/logo-ecs.png" alt="">
+      <h1>{{ "navbar.logo" | translate }}</h1>
+    </div>
+    <ul class="links list-unstyled" #links>
+      <li title="home">
+        <a href="">{{ "navbar.links.home" | translate }}</a>
+      </li>
+      <li title="shop art">
+        <a href="">{{ "navbar.links.shopart" | translate }}</a>
+      </li>
+      <li title="passengers">
+        <a href="">{{ "navbar.links.passesngers" | translate }}</a>
+      </li>
+      <li title="about ecstase">
+        <a href="">{{ "navbar.links.about-ectase" | translate }}</a>
+      </li>
+    </ul>
+    <div class="icon-links">
+      <ul class="list-unstyled">
+        <li>
+          <select #translateSelect (change)="changeTranslate(translateSelect.value)"
+            [value]="translateServ.currentLang">
+            <option value="value1" *ngFor="let lang of translateServ.translateLang" [value]="lang">{{ lang }}</option>
+          </select>
+        </li>
+        <li>
+          <i class="fas fa-search"></i>
+        </li>
+        <li>
+          <i class="fas fa-shopping-cart"></i>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

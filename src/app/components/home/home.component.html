@@ -1,0 +1,141 @@
+<div class="navbar-m home en">
+  <header>
+    <div class="overlay">
+      <div class="container">
+        <div class="introducing">
+          <div class="introducing-info">
+            <h6>{{ "home.header.introducing" | translate }}</h6>
+            <h2 class="h1">{{ "home.header.mainIntro" | translate }}</h2>
+            <button>{{ "home.header.button" | translate }}</button>
+            <div class="live">
+              <ul class="list-unstyled">
+                <li>{{ "home.header.live" | translate }}</li>
+                <li><i class="far fa-eye"></i></li>
+                <li>
+                  <span>527</span>
+                  <p>{{ "home.header.shoppers" | translate }}</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--Start new release-->
+  <div class="new-release">
+    <div class="container" #container>
+      <h2 class="h1 text-center">
+        <span>{{ "home.new-release.mainReleaseH" | translate }}</span>
+        <span>{{ "home.new-release.mainReleaseP" | translate }}</span>
+      </h2>
+      <div class="main-release text-center">
+        <div class="releases" #releases>
+          <div class="release" *ngFor="let release of newReleases">
+            <img class="relative" [src]="release.relativeImg" alt="">
+            <img class="absolute" [src]="release.absoluteImg" alt="">
+            <div class="product-info">
+              <h5>{{ release.releaseName }}</h5>
+              <p>
+                <span>{{ "home.new-release.releaseEdition" | translate }} 50</span>
+                <span> - 50 {{"home.new-release.releaseLeft" | translate }} {{ release.left }}</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="new-launch-live">
+      <div class="container">
+        <div class="launch">
+          <h4>
+            {{ "home.new-release.launch.launch" | translate }}
+            <span>{{ "home.new-release.launch.live" | translate }}</span>
+          </h4>
+          <h4>
+            {{ "home.new-release.launch.signUp" | translate }}
+            <span>{{ "home.new-release.launch.getUpdates" | translate }}</span>
+          </h4>
+          <div class="get-updates">
+            <input [placeholder]="'home.new-release.launch.inputPlaceholder' | translate" type="text">
+            <button>{{ "home.new-release.launch.signUpButton" | translate }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="end-launch">
+      <div class="content">
+        <h4>
+          {{ "home.new-release.end-launch.h4-1" | translate }}
+          <span>{{ "home.new-release.end-launch.h4-span" | translate }}
+          </span> {{ "home.new-release.end-launch.h4-2" | translate }} </h4>
+        <i class="fab fa-apple"></i>
+        <i class="fab fa-google"></i>
+      </div>
+    </div>
+  </div>
+  <!--End new release-->
+
+  <!--Start Main Products-->
+  <div class="main-products text-center">
+    <div class="container">
+      <h2 class="h1">
+        <span>gone & going fast...</span>
+        <span>don't miss the chance to get your artwork</span>
+      </h2>
+      <div class="products">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-6" *ngFor="let good of goods;">
+            <div class="product" [class.soldout]="good.left == 0">
+              <div class="news" *ngIf="good.left < 20">
+                <span class="few" *ngIf="good.left < 20 && good.left > 0">{{"home.products.news-types.few" | translate}}
+                </span>
+                <span class="sold-out" *ngIf="good.left == 0">{{"home.products.news-types.soldout" | translate}}</span>
+              </div>
+              <img [src]="good.img">
+              <div class="product-info">
+                <h5>{{ good.productName }}</h5>
+                <p>
+                  <span>edition of {{ good.quantity }} -</span>
+                  <span [ngClass]="{
+                    'under-10': good.left < 10,
+                    'above-10-to-20': good.left > 10 && good.left < 20,
+                    'above-20': good.left > 20
+
+                  }"> {{ good.left }} left</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="get-all-products">
+          <h4 (click)="generateOtherGoods()">
+            <i class="fas fa-chevron-down"></i>
+            <span>
+              load more (753)
+            </span>
+          </h4>
+          <button>Shop Available art</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Main Products-->
+
+  <div class="about">
+    <div class="container">
+      <div class="video">
+        <video controls>
+          <source src="../../../assets/images/home/about_ecstase.mp4" type="video/mp4">
+          your browser does not support video tag.
+        </video>
+      </div>
+      <div class="about-over">
+        <h4>
+          About ecastase.
+        </h4>
+        <p>Read more <i class="fas fa-chevron-right"></i></p>
+      </div>
+    </div>
+  </div>
+</div>

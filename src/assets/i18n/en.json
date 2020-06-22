@@ -1,0 +1,78 @@
+{
+  "navbar": {
+    "upperNavH": "free worldwide shipping",
+    "upperNavSpan": " for orders over $100",
+    "logo": "ecstase",
+    "links": {
+      "home": "home",
+      "shopart": "shopart",
+      "passesngers": "passesngers",
+      "about-ectase": "about ectase"
+    }
+  },
+  "home": {
+    "header": {
+      "introducing": "introducing",
+      "mainIntro": "fine art",
+      "button": "shop now",
+      "live": "live",
+      "shoppers": "shoppers"
+    },
+    "new-release": {
+      "mainReleaseH": "new release",
+      "mainReleaseP": "this weeks release of limited artworks",
+      "releaseEdition": "edition of",
+      "releaseLeft": "left",
+      "launch": {
+        "launch": "new launch",
+        "live": "live now",
+        "signUp": "sign up",
+        "getUpdates": "to get updates.",
+        "inputPlaceholder": "Enter your email",
+        "signUpButton": "Get updates"
+      },
+      "end-launch": {
+        "h4-1": "Or",
+        "h4-span": "add",
+        "h4-2": "to calendar :"
+      }
+    },
+    "products": {
+      "news-types": {
+        "few": "few",
+        "soldout": "sold out"
+      }
+    }
+  },
+  "footer": {
+    "brandName": "ecstase",
+    "address": "ecstase BV. Westplein 12 3016BM Rotterdam, TheNetherlands",
+    "ul-1": {
+      "mainContent": "limited artworks",
+      "link1": "Shop artworks",
+      "link2": "About our products"
+    },
+    "ul-2": {
+      "mainContent": "company",
+      "link1": "Careers",
+      "link2": "About us",
+      "link3": "Our artists",
+      "link4": "Contact us"
+    },
+    "ul-3": {
+      "mainContent": "others",
+      "link1": "Terms of Use",
+      "link2": "Privacy Policy",
+      "link3": "Refuned Policy"
+    },
+    "news-letter": {
+      "mainLetter": "newsletter",
+      "aboutLetter": "Sign up for a notification email when new limited artworks are released.",
+      "inputPlaceholder": "Your Email Address",
+      "button": "subscribe"
+    }
+  },
+  "footer-end": {
+    "brandName": "ecstase"
+  }
+}

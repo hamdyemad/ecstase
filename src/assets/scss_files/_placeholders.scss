@@ -1,0 +1,97 @@
+%mainH {
+  position: relative;
+  font-size: 33px;
+  span {
+    position: relative;
+    z-index: 1;
+    text-transform: capitalize;
+    font-weight: normal;
+    background: #fff;
+    padding: 0px 20px;
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+    &:last-child {
+      font-weight: bold;
+      display: block;
+      text-transform: uppercase;
+      margin-top: 11px;
+      font-size: 13px;
+      letter-spacing: 3px;
+      @media (max-width: 767px) {
+        margin-top: 5px;
+        font-size: 10px;
+      }
+    }
+  }
+  &:after {
+    top: 34%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    content: "";
+    background-color: #222;
+    @media (max-width: 767px) {
+      top: 44%;
+      height: 1px;
+    }
+  }
+}
+
+%mainButton {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 5px 50px;
+  outline: none;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-size: 21px;
+  border: 3px solid transparent;
+  text-transform: uppercase;
+  border-radius: 25px;
+  @media (max-width: 991px) {
+    padding: 5px 20px;
+    font-size: 14px;
+  }
+  &:hover {
+    border: 3px solid #222;
+    background-color: transparent;
+    color: #222;
+    @media (max-width: 991px) {
+      color: #fff;
+    }
+  }
+}
+
+%product-info {
+  margin-top: 20px;
+  h5 {
+    text-transform: capitalize;
+    font-weight: bold;
+    -webkit-text-stroke: thin;
+    letter-spacing: 2px;
+    @media (max-width: 991px) {
+      font-size: 13px;
+    }
+  }
+  p {
+    span {
+      &:first-child {
+        color: #aeaeae;
+        @media (max-width: 991px) {
+          font-size: 12px;
+        }
+      }
+      &:last-child {
+        font-weight: bold;
+        -webkit-text-stroke: thin;
+        @media (max-width: 991px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

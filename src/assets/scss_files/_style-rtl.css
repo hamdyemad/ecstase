@@ -1,0 +1,70 @@
+/* Start Upper Nav */
+.upper-nav .news-tape {
+  animation: unset !important;
+  animation: arabic 8s linear infinite !important;
+}
+@keyframes arabic {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* End Upper Nav */
+
+/* Start Header */
+.active-burger .burger-middle {
+  transform: translateX(11px) !important;
+}
+/* End Header */
+
+/* Start new-release */
+
+.new-release .releases .release:not(:last-child) {
+  margin-right: 0 !important;
+}
+.new-release .releases .release:not(:last-child) {
+  margin-left: 15px !important;
+}
+/* Start new Launch */
+.new-launch-live .container {
+  justify-content: flex-start !important;
+}
+.new-launch-live .launch h4:first-child {
+  letter-spacing: 2px !important;
+}
+@media (min-width: 768px) {
+  .new-launch-live .launch .get-updates input {
+    padding: 8px 15px !important;
+    padding-left: 50px !important;
+  }
+}
+@media (max-width: 767px) {
+  .new-launch-live .launch .get-updates input {
+    padding: 2px 10px !important;
+    padding-left: 85px !important;
+  }
+}
+.new-launch-live .launch .get-updates button {
+  right: unset !important;
+  left: -10px !important;
+}
+@media (max-width: 767px) {
+  .new-launch-live .launch .get-updates button {
+    right: unset !important;
+    left: -60px !important;
+  }
+}
+/* End new Launch */
+
+/* End new-release */
+
+/* Start Footer */
+.footer-end .container .about-footer ul li:not(:last-child) {
+  margin-right: 0 !important;
+  margin-left: 20px;
+}
+
+/* End Footer */

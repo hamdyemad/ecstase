@@ -1,0 +1,78 @@
+{
+  "navbar": {
+    "upperNavH": "شحن مجاني لجميع أنحاء العالم",
+    "upperNavSpan": "للطلب يزيد عن 100 دولار",
+    "logo": "نشوة",
+    "links": {
+      "home": "الرئيسية",
+      "shopart": "متجر الفن",
+      "passesngers": "الركاب",
+      "about-ectase": "عن نشوة"
+    }
+  },
+  "home": {
+    "header": {
+      "introducing": "مقدمة",
+      "mainIntro": "فن راقي",
+      "button": "تسوق الأن",
+      "live": "بث مباشر",
+      "shoppers": "عدد المتسوقون"
+    },
+    "new-release": {
+      "mainReleaseH": "اصدار جديد",
+      "mainReleaseP": "إصدار هذا الأسبوع من الأعمال الفنية المحدودة",
+      "releaseEdition": "طبعة من",
+      "releaseLeft": "طرحه",
+      "launch": {
+        "launch": "اطلاق جديد",
+        "live": "بث مباشر الأن",
+        "signUp": "سجل",
+        "getUpdates": "للحصول على تحديثات",
+        "inputPlaceholder": "ادخل بريدك الأكترونى",
+        "signUpButton": "احصل على تحديثات"
+      },
+      "end-launch": {
+        "h4-1": "أو",
+        "h4-span": "أضف",
+        "h4-2": "للتقييم :"
+      }
+    },
+    "products": {
+      "news-types": {
+        "few": "قليل",
+        "soldout": "نفذت الكمية"
+      }
+    }
+  },
+  "footer": {
+    "brandName": "نشوة",
+    "address": "نشوة . ويستبلين 12 3016 روتيدرام , نيوزلاندا",
+    "ul-1": {
+      "mainContent": "أعمال فنية محدودة",
+      "link1": "تسوق الأعمال الفنية",
+      "link2": "حول منتجاتنا"
+    },
+    "ul-2": {
+      "mainContent": "شركة",
+      "link1": "وظائف",
+      "link2": "معلومات عنا",
+      "link3": "فنانونا",
+      "link4": "اتصل بنا"
+    },
+    "ul-3": {
+      "mainContent": "الآخرين",
+      "link1": "تعليمات الاستخدام",
+      "link2": "سياسة الخصوصية",
+      "link3": "سياسة الاسترجاع"
+    },
+    "news-letter": {
+      "mainLetter": "النشرة الإخبارية",
+      "aboutLetter": "قم بالتسجيل للحصول على إشعار بالبريد الإلكتروني عند إصدار أعمال فنية محدودة جديدة.",
+      "inputPlaceholder": "عنوان بريدك الإلكتروني",
+      "button": "الإشتراك"
+    }
+  },
+  "footer-end": {
+    "brandName": "نشوة"
+  }
+}
